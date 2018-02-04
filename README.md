@@ -1,27 +1,25 @@
-Welcome to the Glitch BETA
-=========================
+# Author
+![@Rafase282](https://avatars0.githubusercontent.com/Rafase282?&s=128)
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+Created by Rafase282
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
+[Github](https://github.com/Rafase282) | [FreeCodeCamp](http://www.freecodecamp.com/rafase282) | [CodePen](http://codepen.io/Rafase282/) | [LinkedIn](https://www.linkedin.com/in/rafase282) | [Blog/Site](https://rafase282.wordpress.com/) | [E-Mail](mailto:rafase282@gmail.com)
 
-Find out more [about Glitch](https://glitch.com/about).
+# FreeCodeCamp API Basejump: Timestamp Microservice
+### User stories:
+1. I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+2. If it does, it returns both the Unix timestamp and the natural language form of that date.
+3. If it does not contain a date or Unix timestamp, it returns null for those properties.
 
+## Example usage:
 
-Your Project
-------------
+```url
+https://timestamp-ms.herokuapp.com/December%2015,%202015
+https://timestamp-ms.herokuapp.com/1450137600
+```
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+## Example output:
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
-
-
-Made by [Fog Creek](https://fogcreek.com/)
--------------------
-
-\ ゜o゜)ノ
+```json
+{ "unix": 1450137600, "natural": "December 15, 2015" }
+```
