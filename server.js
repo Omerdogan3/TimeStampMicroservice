@@ -1,11 +1,9 @@
-var express    = require('express');        // call express
-var app        = express();                 // define our app using express
+var express = require('express');
+var app = express();                 
 var bodyParser = require('body-parser');
 var routes = require('./app/routes/index.js');
 var api = require('./app/api/timestamp.js');
 
-// configure app to use bodyParser()
-// this will let us get the data from a POST
 app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Methods", "GET");
